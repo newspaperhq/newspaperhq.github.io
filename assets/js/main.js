@@ -28,7 +28,7 @@ jQuery(document).ready(function() {
   });
 
   // Scroll to top
-  $('body').append('<div id="back-top"><span class="glyphicon glyphicon-chevron-up"></span></div>');
+  $('body').append('<div id="back-top"><span class="icon icon-2x icon-chevron-up"></span></div>');
   $("#back-top").hide();
 
   // fade in #back-top

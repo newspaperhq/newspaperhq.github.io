@@ -295,12 +295,11 @@ a {
   }
 }
 
-/* Features Wrap */
 
-.featureswrap {
+.slackwrap {
   background-color: #f5f5f5;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   .col-lg-6 img {
     display: table;
     margin: 0 auto;
@@ -309,7 +308,7 @@ a {
     font-size: 20px;
   }
   .col-lg-6 {
-    h4, licon {
+    h4, h3, licon {
       font-size: 20px;
       color: #06979e;
     }
