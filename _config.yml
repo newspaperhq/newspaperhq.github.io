@@ -17,10 +17,25 @@ url: "" # the base hostname & protocol for your site
 twitter_username: newspaperio 
 github_username: newspaperhq 
 
-# Build settings
+  # Build settings
 markdown: kramdown
 
 permalink: pretty
 
 gems:
- - jekyll-coffeescript
+  - jekyll-coffeescript
+
+
+    # this goes inside _config.yml. Change as required
+navigation:
+  - text: Home
+    url: /
+  - text: Slack Addon
+    url: /#slack
+  - text: Getting Started
+    url: /slack/getting_started/
+  - text: FAQ
+    url: /slack/faq/
+  - text: Newsletter
+    url: /#newsletter
+

@@ -12,8 +12,8 @@ jQuery(document).ready(function() {
 
       var active_link = $('#navigation a[href="#' + active_section.attr("id") + '"]');
 
-      navigation_links.parent().removeClass("active");
-      active_link.parent().addClass("active");
+      // navigation_links.parent().removeClass("current");
+      active_link.parent().addClass("current");
     },
     offset: '50%'
   });

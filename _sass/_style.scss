@@ -113,7 +113,7 @@ a {
     color: #06979e;
     box-shadow: none;
   }
-  &:active {
+  &:current {
     outline: 0;
   }
 }
@@ -162,7 +162,7 @@ a {
       background-color: transparent;
     }
   }
-  .active > a {
+  .current > a {
     background-color: transparent;
     color: #bdc3c7;
     &:hover, &:focus {
