@@ -113,7 +113,7 @@ a {
     color: #06979e;
     box-shadow: none;
   }
-  &:active {
+  &:current {
     outline: 0;
   }
 }
@@ -123,7 +123,7 @@ a {
  --------------------------------------------------------------------- */
 
 .navbar-default {
-  height: 56px;
+  // height: 56px;
   font-family: 'Lato', sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -141,7 +141,7 @@ a {
 .navbar-toggle {
   border: 0;
   &:hover, &:focus {
-    background-color: white;
+    // background-color: white;
   }
   > .icon-bar {
     background-color: #06979e;
@@ -162,7 +162,7 @@ a {
       background-color: transparent;
     }
   }
-  .active > a {
+  .current > a {
     background-color: transparent;
     color: #bdc3c7;
     &:hover, &:focus {
@@ -173,10 +173,10 @@ a {
 }
 .navbar-right a[type="button"] {
   padding: 6px 20px 6px 20px;
-  color: #fff;
+  // color: #fff;
   &:hover, &:focus {
     background-color: transparent;
-    color: #06979e;
+    // color: #06979e;
   }
 }
 }
@@ -200,10 +200,17 @@ a {
   }
   .navbar-toggle {
     display: block;
+      background-color: #222;
+  }
+  .navbar-form {
+    border: none;
+          box-shadow: none;
+
   }
   .navbar-collapse {
-    border-top: 1px solid transparent;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      background-color: #222;
+      border-top: none;
+      box-shadow: none;
     &.collapse {
       display: none !important;
       &.in {
@@ -288,12 +295,11 @@ a {
   }
 }
 
-/* Features Wrap */
 
-.featureswrap {
+.slackwrap {
   background-color: #f5f5f5;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   .col-lg-6 img {
     display: table;
     margin: 0 auto;
@@ -302,7 +308,7 @@ a {
     font-size: 20px;
   }
   .col-lg-6 {
-    h4, licon {
+    h4, h3, licon {
       font-size: 20px;
       color: #06979e;
     }
