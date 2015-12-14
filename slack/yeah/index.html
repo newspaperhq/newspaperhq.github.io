@@ -15,20 +15,9 @@ title: Home
         <hr/>
         <br/>
         <div class="col-lg-6 col-lg-offset-3">
-          <h3>
-            <span class="icon icon-2x icon-slack"></span> 
-            Get started
-          </h3>
-          <p>To get started you can issue the following commands:
-            <pre>slack /help</pre>
-          To get a list of all topics type:
-            <pre>slack /topics</pre>
-          </p>
-          <p>
-            Any questions or feedback contact us at 
-            <a href="mailto:hello@newspaper.io">hello@newspaper.io</a>
-          </p>
-        </div>
+          {% include slack_commands.html %}
+          {% include feedback_email.html %}
+           </div>
       </div>
     </div>
   </div>

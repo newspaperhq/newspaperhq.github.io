@@ -30,12 +30,8 @@ gems:
 navigation:
   - text: Home
     url: /
-  - text: Slack Addon
-    url: /#slack
   - text: Getting Started
     url: /slack/getting_started/
   - text: FAQ
     url: /slack/faq/
-  - text: Newsletter
-    url: /#newsletter
 
