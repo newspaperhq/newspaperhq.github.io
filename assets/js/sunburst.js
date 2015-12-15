@@ -5,9 +5,10 @@ var width = 400,
     color = d3.scale.category20c();
 
 var svg = d3.select("#sunburst").append("svg")
-    .attr("width", width)
+    .attr("viewBox", "0 0 400 400")
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("class", "svg-content")
     .attr("id", "sunny")
-    .attr("height", height)
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height * .52 + ")");
 
