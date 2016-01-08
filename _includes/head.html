@@ -5,8 +5,31 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="keywords" content="">
   <meta name="author" content="Newspaper.io">
-  <link rel="shortcut icon" href="/assets/img/favicon/favicon.png">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Newspaper"/>
+  <meta property="og:image" content="/assets/img/newspaper_logo_128.png"/>
+  <meta property="og:title" content={% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}/>
+  <meta property="og:description" content={% if page.description %}{{ page.description }}{% endif %}/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@newspaperhq">
+  <meta name="twitter:title" content={% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}>
+  <meta name="twitter:description" content={% if page.description %}{{ page.description }}{% endif %}>
+  <meta name="twitter:image" content="/assets/img/newspaper_logo_128.png">		
+  <link id="favicon" rel="shortcut icon" href="/assets/img/favicon/favicon.png" sizes="16x16 32x32 48x48" type="image/png" />
+  <link rel="icon" href="/assets/img/favicon/favicon_256.png" sizes="256x256" type="image/png" />
+
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/img/newspaper_logo_152.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/newspaper_logo_144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/img/newspaper_logo_120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/newspaper_logo_114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72"   href="/assets/img/newspaper_logo_72.png" />
+  <link rel="apple-touch-icon-precomposed" href="/assets/img/newspaper_logo_57.png" />
+
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="/assets/img/newspaper_logo_144.png" />
+
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
