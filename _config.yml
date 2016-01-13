@@ -31,4 +31,7 @@ navigation:
   - text: FAQ
     url: /slack/faq/
 
+gems:
+  - jekyll-sitemap
+
 
