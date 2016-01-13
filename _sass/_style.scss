@@ -10,7 +10,6 @@ body {
   color: #555;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
-  padding-top: 50px;
 }
 
 hr {
@@ -142,20 +141,15 @@ a {
  * Navigation
  --------------------------------------------------------------------- */
 
+
 .navbar-default {
-  // height: 56px;
   font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  background-color: white;
-  // text-transform: uppercase;
-  // letter-spacing: 1px;
-  // padding-top: 20px;
-  // padding-bottom: 0px;
-  // background-color: #fff;
-  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  font-size: 20px;
+  font-weight: 600;
+  border-color: transparent;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  background-color: transparent;
+  color: white;
 
   // */
 .navbar-toggle {
@@ -168,7 +162,8 @@ a {
   }
 }
 .navbar-brand {
-  color: #06979e;
+  // color: #06979e;
+  color: white;
   padding: 7px 15px;
   &:hover {
     color: #bdc3c7;
@@ -176,7 +171,8 @@ a {
 }
 .navbar-nav > {
   li > a {
-    color: #06979e;
+    // color: #06979e;
+    color: white;
     &:hover, &:focus {
       color: #bdc3c7;
       background-color: transparent;
@@ -184,7 +180,8 @@ a {
   }
   .current > a {
     background-color: transparent;
-    color: #bdc3c7;
+    // color: #bdc3c7;
+    color: white;
     &:hover, &:focus {
       background-color: transparent;
       color: #bdc3c7;
@@ -228,7 +225,6 @@ a {
 
   }
   .navbar-collapse {
-    background-color: white;
     border-top: none;
     box-shadow: none;
     &.collapse {
@@ -260,12 +256,10 @@ a {
 .headerwrap {
   background: url("/assets/img/header-bg.jpg") no-repeat center top;
   background-size: cover;
-  padding-top: 16px;
-  .col-lg-2 {
+  col-lg-2 {
     padding-top: 40px;
   }
   h1 {
-    margin-top: 30px;
     color: white;
     font-size: 70px;
   }

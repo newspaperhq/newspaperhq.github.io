@@ -5,17 +5,17 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="keywords" content="">
   <meta name="author" content="Newspaper.io">
-  <title>{% if page.tt %}{{ page.tt }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title }}{% endif %}</title>
 
   <meta property="og:type" content="website"/>
   <meta property="og:site_name" content="Newspaper"/>
   <meta property="og:image" content="/assets/img/newspaper_logo_128.png"/>
-  <meta property="og:title" content={% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}/>
-  <meta property="og:description" content={% if page.description %}{{ page.description }}{% endif %}/>
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% endif %}"/>
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@newspaperhq">
-  <meta name="twitter:title" content={% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}>
-  <meta name="twitter:description" content={% if page.description %}{{ page.description }}{% endif %}>
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% endif %}">
   <meta name="twitter:image" content="/assets/img/newspaper_logo_128.png">		
   <link id="favicon" rel="shortcut icon" href="/assets/img/favicon/favicon.png" sizes="16x16 32x32 48x48" type="image/png" />
   <link rel="icon" href="/assets/img/favicon/favicon_256.png" sizes="256x256" type="image/png" />
